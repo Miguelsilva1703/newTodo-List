@@ -17,10 +17,6 @@ function addTodo(event){
     //Prevent Form from submitting
     event.preventDefault()
 
-    //Create wrap
-    const todoDivWrap = document.createElement("div")
-    todoDivWrap.classList.add("div-wrap");
-
     //Create TODO DIV
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
@@ -51,9 +47,9 @@ function addTodo(event){
 
 
     //Append Wrap
-    todoDivWrap.appendChild(todoDiv);
+ 
     //Append to List
-    todoList.appendChild(todoDivWrap);
+    todoList.appendChild(todoDiv);
 
     //Clear TODO value
     todoInput.value = "";
